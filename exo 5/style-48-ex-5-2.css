@@ -14,20 +14,20 @@ body {
 
 nav{
     width: 100%;
-    height: 5em;
-    margin-top: 2em;
+    height: 10em;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
 nav a{
     width: 20%;
+    height: 3em;
     text-align: center;
     color: white;
     text-decoration-line: none;
     font-family: sans-serif;
     font-size: 2em;
-    padding: 0.5em;
+    padding: 1em;
 }
 
 #color01{
@@ -50,3 +50,11 @@ nav a{
     background: #e74c3c;
 }
 
+@media screen and (max-width: 600px){
+    nav{
+        height: auto;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+    }
+}
